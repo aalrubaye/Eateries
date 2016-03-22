@@ -7,7 +7,8 @@ The code (index.php) get the submitted value from the textbox, in which user hav
 
 This function first of all connects to the provided database. Then creates an aggregated table with the columns that we want out of the tables in the database and selects only those rows that includes the (keyword). By doing that we are able to print out the result row by row as the following structure:
 
-Eatery_Type_Name:
+
+	Eatery_Type_Name:
 
 	Owned by: Owener’s First_Name Last_Name | Phone: Owner’s Phone
 	
