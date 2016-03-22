@@ -8,15 +8,12 @@
 <?php
 if( isset($_GET['submit']) )
 {
-    //be sure to validate and clean your variables
     $val = htmlentities($_GET['values']);
-    //then you can use them in a PHP function.
-    search($val);
+    Search($val);
 }
 
 function Search($val)
 {
-    //real search code goes here
     $dbhost = 'localhost';
     $dbuser = 'root';
     $dbpass = '';
@@ -26,7 +23,7 @@ function Search($val)
     if(! $conn ) {
        die('Could not connect: ' . mysql_error());
     }
-
+    
     $sql = "SELECT * FROM (SELECT E.`Name`, E.`City`, E.`State`, E.`Zip`,
       ET.`Type Name`, EO.`First Name`, EO.`Last Name`, EO.`Phone` FROM `Eateries`
        as E, `Eatery Type` as ET, `Eatery Owners` as EO WHERE E.Type=ET.ID and
@@ -51,7 +48,7 @@ function Search($val)
     }
 
     if ($count == 0){
-      echo "No data found";
+      echo "No data was found";
     }
     mysql_close($conn);
 }
