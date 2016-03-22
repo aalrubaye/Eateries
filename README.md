@@ -10,6 +10,6 @@ This function first of all connects to the provided database. Then creates an ag
 
 	Eatery_Type_Name:
 
-	Owned by: Owener’s First_Name Last_Name | Phone: Owner’s Phone
+	        Owned by: Owener’s First_Name Last_Name | Phone: Owner’s Phone
 	
-	Located in: Eatery’s City, Eatery’s State, Eatery’s Zip
+	        Located in: Eatery’s City, Eatery’s State, Eatery’s Zip
